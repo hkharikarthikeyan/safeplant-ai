@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+*.env.local
+
+# Flask
+instance/
+.webassets-cache
+flask_session/
+
+# Database / Migrations
+migrations/versions/*.pyc
+
+# Data (generated — not committed)
+data/generated/
+data/full/
+data/starter/
+data/ground_truth/*.json
+data/ground_truth/*.csv
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+*.pytest_cache
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+desktop.ini
