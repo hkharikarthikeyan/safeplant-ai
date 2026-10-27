@@ -168,7 +168,7 @@ safeplant-ai/
 │   └── src/pages/            # 19 pages: Dashboard, Machines, Anomalies, Exports, etc.
 ├── data/
 │   └── ground_truth/         # ground_truth.csv + ground_truth.json
-└── docs/                     # ARCHITECTURE.md, DATABASE_SCHEMA.md, BUSINESS_RULES.md
+└── docs/                     # Architecture, schema, master dev prompt, AI prompt log
 ```
 
 ---
@@ -961,6 +961,19 @@ See `docs/DATABASE_SCHEMA.md` for the complete ER diagram.
 | `docs/ARCHITECTURE.md` | System design, data flow, component diagram |
 | `docs/DATABASE_SCHEMA.md` | ER diagram, all 20 tables, indexes |
 | `docs/BUSINESS_RULES.md` | Safety rules, state machines, formulas |
+| `docs/MASTER_DEVELOPMENT_PROMPT.md` | Full 72-hour assessment master specification prompt (authoritative scope) |
+| `docs/AI_PROMPT_LOG.md` | Phase-scoped AI prompts for reviewer disclosure (requirement-driven only) |
+| `docs/SUPABASE_SETUP.md` | Supabase / database setup |
+
+### AI-assisted development disclosure
+
+This project was built with AI-assisted development permitted by the assessment. For interviews or reviewer questions about **which prompts you used**:
+
+1. Cite the master specification: **[docs/MASTER_DEVELOPMENT_PROMPT.md](docs/MASTER_DEVELOPMENT_PROMPT.md)** (sections 1–28 plus **§29 Prompt record for reviewers**).
+2. Cite phase follow-ups and session notes: **[docs/AI_PROMPT_LOG.md](docs/AI_PROMPT_LOG.md)** — log only structured, verification-oriented prompts (not casual or off-topic chat).
+3. Map requirements to code: **REQUIREMENTS_TRACEABILITY.md** (when present in `docs/`).
+
+Do not describe joke or vague one-line prompts as part of the project methodology; the documented prompts mirror the problem statement, phased delivery, and test/validation evidence.
 
 ---
 
