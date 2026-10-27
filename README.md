@@ -1,6 +1,6 @@
 # SafePlant AI — Industrial Safety Monitoring & Incident Intelligence System
 
-> **72-Hour Full-Stack Coding Assessment** | SafePlant AI v1.0.0
+> SafePlant AI v1.0.0
 
 A production-ready industrial safety intelligence platform built with **Python Flask + PostgreSQL (Supabase) + React + Vite**. Analyzes machine safety events, interlocks, alarm acknowledgements, operator shifts, incidents, and corrective actions to identify repeated unsafe conditions and anomalies.
 
