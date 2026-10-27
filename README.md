@@ -234,6 +234,31 @@ Open **http://localhost:5173** → SafePlant AI dashboard.
 
 The platform uses **deterministic synthetic data generation** (seed `20261022`) covering the period **2026-10-01 → 2026-10-30 UTC**.
 
+### Changing the Seed
+
+The default seed is `20261022`. To use a different seed, choose any of these methods:
+
+**1. Via UI** — Open the **Data Generator** page → change the value in the **Random Seed** field → click **Run Generation**.
+
+**2. Via `.env` file** (persistent default)
+```env
+# backend/.env
+GENERATION_SEED=99999999
+```
+
+**3. Via CLI**
+```powershell
+python scripts/generate_data.py --mode starter --seed 99999999
+```
+
+**4. Via API**
+```http
+POST /api/v1/generator/run
+{ "mode": "starter", "seed": 99999999 }
+```
+
+> Priority order: **API/CLI argument > `.env` GENERATION_SEED > hardcoded default (20261022)**
+
 | Mode | Plants | Machines | Alarm Events | Incidents |
 |------|--------|----------|-------------|-----------|
 | **Starter** | 1 | 5 | 1,000 | ~40 |
